@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - SIEER Chile</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  
+</head>
+<body class="auth-page">
+
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="media/mp4/panel.mp4" type="video/mp4">
+    Tu navegador no soporta videos en HTML5.
+  </video>
+
+  <!-- Capa oscura -->
+  <div class="overlay"></div>
+
+  <header class="auth-header">
+    <div class="container">
+      <div class="auth-header-content">
+        <a href="index.html" class="auth-logo">
+          <h1>SIEER Chile</h1>
+          <span>Servicios de Ingeniería Eléctrica</span>
+        </a>
+        <a href="register.html" class="btn btn-outline">Crear Cuenta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-container">
+      <div class="auth-form-container">
+        <div class="auth-form-header">
+          <h2>Iniciar Sesión</h2>
+          <p>Ingresa a tu cuenta para gestionar tus proyectos</p>
+        </div>
+        
+        <form class="auth-form" id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Correo Electrónico</label>
+            <input type="email" id="loginEmail" name="email" required>
+            <span class="input-icon"><i class="fas fa-envelope"></i></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="loginPassword">Contraseña</label>
+            <input type="password" id="loginPassword" name="password" required>
+            <span class="input-icon"><i class="fas fa-lock"></i></span>
+            <button type="button" class="toggle-password" aria-label="Mostrar contraseña">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          
+          <div class="form-options">
+            <div class="checkbox-group">
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">Recordar sesión</label>
+            </div>
+            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-full">Iniciar Sesión</button>
+          </div>
+        </form>
+        
+        <div class="auth-form-footer">
+          <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+        </div>
+      </div>
+      
+      <div class="auth-welcome">
+        <div class="auth-welcome-content">
+          <h2>Bienvenido de vuelta</h2>
+          <p>Accede a tu cuenta para:</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Revisar el estado de tus proyectos</li>
+            <li><i class="fas fa-check-circle"></i> Descargar documentación técnica</li>
+            <li><i class="fas fa-check-circle"></i> Contactar a nuestro equipo de soporte</li>
+            <li><i class="fas fa-check-circle"></i> Gestionar tus servicios contratados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
